@@ -17,7 +17,7 @@ app.teardown_appcontext(lambda x: get_db_session(config.get("database_url")).rem
 
 # Аутентификация пользователей (замените на вашу безопасную систему аутентификации)
 
-users_db = { #ЗАМЕНИТЕ на безопасное хранение и извлечение хешированных паролей из вашей базы данных
+users_db = { 
     "user1@example.com": generate_password_hash("password1"),
     "user2@example.com": generate_password_hash("password2"),
     "user3@example.com": generate_password_hash("password3"),
